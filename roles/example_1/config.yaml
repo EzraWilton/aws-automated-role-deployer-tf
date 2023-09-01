@@ -6,6 +6,6 @@ Parameters:
   TimeEnd: "14:00:00"
   DateStart: "01-01-2020"
   DateEnd: "01-01-2021"
-  UserList: ['example@arm.com', 'example@arm.com']
+  UserList: ['example@example.com', 'example@example.com']
   ManagedPolicies: ['AWSBillingReadOnlyAccess', 'AWSCodeCommitReadOnly']
   PolicyPath: []
