@@ -1,0 +1,28 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::${account_id}:root"
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+                "DateGreaterThan": {
+                    "aws:CurrentTime": "${date_start}T${time_start}Z"
+                },
+                "DateLessThan": {
+                    "aws:CurrentTime": "${date_end}T${time_end}Z"
+                },
+                "StringEquals": {
+                    "aws:PrincipalTag/Email": ${jsonencode(user_email)}
+                 },
+                "StringLike": {
+                    "aws:PrincipalArn": [
+                        "arn:aws:iam::${account_id}:role/aws-reserved/sso.amazonaws.com/*/AWSReservedSSO_ViewOnlyAccess_*"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+Parameters:
+
+  AccountId: "valid-account-id"
+  RoleName: "example_role_2"
+  TimeStart: "09:00:00"
+  TimeEnd: "14:00:00"
+  DateStart: "01-01-2020"
+  DateEnd: "01-01-2021"
+  UserList: ['example@example.com']
+  ManagedPolicies: []
+  PolicyPath: ["roles/example_2/inline.json"] #dddd

@@ -1,0 +1,11 @@
+Parameters:
+
+  AccountId: "example_account_id"
+  RoleName: "example_role_1"
+  TimeStart: "09:00:00"
+  TimeEnd: "14:00:00"
+  DateStart: "01-01-2020"
+  DateEnd: "01-01-2021"
+  UserList: ['example@arm.com', 'example@arm.com']
+  ManagedPolicies: ['AWSBillingReadOnlyAccess', 'AWSCodeCommitReadOnly']
+  PolicyPath: []
