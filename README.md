@@ -19,3 +19,8 @@
 <ul>- PolicyPath is the filepath to your inline policy. Must be str in list format but only supports one path to one inline policy. If not required, provide empty list [ ] </ul>
 <li>Submit an new MR with your folder, request approval.</li>
 <li>Once merged, review the plan in terraform enterprise to verify it is deploying your role only </li>
+
+<br>
+
+![image](https://github.com/EzraWilton/aws-automated-role-deployer-tf/assets/79845635/44851bff-39d2-43b8-91b7-4259c90287e6)
+
